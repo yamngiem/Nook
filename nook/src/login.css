@@ -1,0 +1,85 @@
+/* GridContainer.css */
+.grid-container {
+    display: grid;
+    gap: 20px;
+    background-image: url("C:\Users\jasmi\Omatprojektit\Nook\nook\public\kuvat\login.jpg");
+    background-size: cover;
+    background-position: center;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    color: white;
+  }
+  
+ 
+  
+  .logo {
+    max-width: 200px;
+    max-height: 100px; /* Pienennetty korkeutta */
+    grid-row: 1;
+    grid-column: 2;
+    justify-self: center;
+    align-self: center;
+    margin-top: 50px; /* Säädä etäisyyttä ylhäältä */
+    padding-bottom: 20px; /* Pienennetty alapuolista tyhjää tilaa */
+  }
+  
+  .username {
+    text-align: center;
+    grid-row: 2;
+    grid-column: 2;
+    height: 10px;
+    margin-top: 10px;
+    justify-self: center;
+    align-self: center;
+    font-size: 16px; /* Pienennetty fonttikokoa */
+    border-radius: 20px;
+  }
+  
+  .password {
+    text-align: center;
+    grid-row: 3;
+    grid-column: 2;
+    height: 50px; /* Pienennetty korkeutta */
+    margin-top: 10px;
+    margin-bottom: 50px; /* Pienennetty väliä seuraavaan elementtiin */
+    justify-self: center;
+    align-self: center;
+    font-size: 16px; /* Pienennetty fonttikokoa */
+  }
+  
+  .loginnappi {
+    grid-column: 2;
+    grid-row: 4;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: transparent;
+    color: white;
+    width: 100px;
+    height: 15px; /* Pienennetty korkeutta */
+    justify-self: center;
+    align-self: center;
+  
+    background-image: url('C:\\Users\\jasmi\\Omatprojektit\\Nooks\\nooks-react-app\\public\\kuvat\\loginnappi.jpg');
+    background-size: cover;
+    background-position: center;
+    border: transparent;
+  }
+  
+  input {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 20px;
+    border-color: transparent;
+  }
+  
+  input:focus {
+    outline: none;
+    border: 2px solid #865525;
+    box-shadow: 0 0 10px rgba(75, 50, 31, 0.5);
+  }
+  
