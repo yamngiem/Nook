@@ -22,27 +22,33 @@ function App() {
 
 
   return (
-    <div className="grid-container">
+
+    <div className="grid-background">
+      <div className="grid-container">
 
 
 
-      <img src="../kuvat/logo.png" alt="Logo kuvaileva teksti" className="logo" />
+        <img src="../kuvat/logo2.png" alt="Logo kuvaileva teksti" className="logo" />
 
 
-      <label class="username">
+        <label class="username">
 
-        <input defaultValue={"text"} id="etunimi" type="text" placeholder="Username" />      </label>
-
-
-
-      <label class="password">
-
-        <input defaultValue={"password"} id="etunimi" type="text" placeholder="Enter your password" />      </label>
+          <input defaultValue={"text"} id="etunimi" type="text" placeholder="Username" />      </label>
 
 
-      <button className="loginnappi"></button>
-      {/* Täällä voit lisätä grid-item-elementtejä */}
+
+        <label class="password">
+
+          <input defaultValue={"password"} id="etunimi" type="text" placeholder="Enter your password" />      </label>
+
+
+        <button className="loginnappi"></button>
+        {/* Täällä voit lisätä grid-item-elementtejä */}
+      </div>
+
+
     </div>
+
   );
 }
 
