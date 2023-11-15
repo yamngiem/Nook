@@ -33,13 +33,13 @@ function App() {
 
         <label class="username">
 
-          <input defaultValue={"text"} id="etunimi" type="text" placeholder="Username" />      </label>
+          <input defaultValue={""} id="etunimi" type="text" placeholder="Username" />      </label>
 
 
 
         <label class="password">
 
-          <input defaultValue={"password"} id="etunimi" type="text" placeholder="Enter your password" />      </label>
+          <input defaultValue={""} id="etunimi" type="text" placeholder="Enter your password" />      </label>
 
 
         <button className="loginnappi"></button>
