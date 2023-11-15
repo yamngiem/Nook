@@ -27,7 +27,7 @@ function App() {
       <div className="grid-container">
 
 
-
+        <link rel="icon" href="../kuvat/valilehtilogo.png" type="image/x-icon" />
         <img src="../kuvat/logo2.png" alt="Logo kuvaileva teksti" className="logo" />
 
 
