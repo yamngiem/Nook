@@ -1,54 +1,17 @@
-// import logo from './logo.svg';
-import './login.css';
-
-
+// App.js
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Page1 from './login';
+import Page2 from './frontpage';
 
 function App() {
-
-  // const backgroundStyle = {
-  //   backgroundImage: `url(${process.env.PUBLIC_URL}/kuvat/login.jpg)`,
-  //   backgroundSize: 'cover',
-  //   backgroundPosition: 'center',
-  //   height: '100vh',
-  //   display: 'flex',
-  //   justifyContent: 'center',
-  //   alignItems: 'center',
-  //   color: 'white',
-  // };
-
-
-
-
-
-
   return (
-
-    <div className="grid-background">
-      <div className="grid-container">
-
-
-        <link rel="icon" href="../kuvat/valilehtilogo.png" type="image/x-icon" />
-        <img src="../kuvat/logo2.png" alt="Logo kuvaileva teksti" className="logo" />
-
-
-        <label class="username">
-
-          <input defaultValue={""} id="etunimi" type="text" placeholder="Username" />      </label>
-
-
-
-        <label class="password">
-
-          <input defaultValue={""} id="etunimi" type="text" placeholder="Enter your password" />      </label>
-
-
-        <button className="loginnappi"></button>
-        {/* Täällä voit lisätä grid-item-elementtejä */}
-      </div>
-
-
-    </div>
-
+    <Router>
+      <Routes>
+        <Route path="/" element={<Page1 />} />
+        <Route path="/page2" element={<Page2 />} />
+      </Routes>
+    </Router>
   );
 }
 
