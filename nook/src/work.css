@@ -1,0 +1,133 @@
+@font-face {
+    font-family: 'CorneroftheSky';
+    src: url(C:\Users\jasmi\Omatprojektit\Nook\nook\public\fonts\CorneroftheSky.ttf);
+}
+
+.workelements{
+    display: grid;
+    grid-row: auto auto auto;
+    grid-column: auto auto auto ;
+    grid-gap: 20px;
+   
+}
+/* CSS */
+.button60 {
+    grid-row: 1;
+    grid-column: 3;
+    margin-left: 0px;
+    margin-top: 20px;
+    align-items: center;
+    background-color: #fee6e3;
+    border: 2px solid #111;
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: #111;
+    cursor: pointer;
+    display: flex;
+    font-family: 'CorneroftheSky', sans-serif;
+    font-size: 16px;
+    height: 48px;
+    justify-content: center;
+    line-height: 24px;
+    max-width: 50px;
+    padding: 0 25px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    justify-self:end ;
+    margin-right: 120px;
+}
+
+.button60:after {
+    background-color: #111;
+    border-radius: 8px;
+    content: "";
+    display: block;
+    height: 48px;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    top: -2px;
+    transform: translate(8px, 8px);
+    transition: transform .2s ease-out;
+    z-index: -1;
+}
+
+.button60:hover:after {
+    transform: translate(0, 0);
+}
+
+.button60:active {
+    background-color: #ffdeda;
+    outline: 0;
+}
+
+.button60:hover {
+    outline: 0;
+}
+
+@media (min-width: 768px) {
+    .button59 {
+        padding: 0 40px;
+    }
+}
+h1{
+    font-family: 'PartyConfetti', sans-serif;
+    letter-spacing: 2px;
+    text-transform: lowercase;
+    color: #402a1c;
+}
+
+
+
+.calculator{
+    grid-row: 2;
+    grid-column: 1;
+    background-color: #fce0d2;
+    border-radius: 25px;
+    text-align: center;
+    margin-top: 0px;
+    margin-left: 100px;
+    height: 350px;
+}
+.spotify {
+    grid-row: 2; /* Sijoitetaan Spotify-div ensimmäiselle riville */
+    grid-column: 2; /* Sama sarakke kuin pelidiv */
+    background-color: #fce0d2;
+    border-radius: 25px;
+    text-align: center;
+    height: 250px; /* Lisätään korkeutta selkeyden vuoksi */
+}
+.weather{
+    grid-row: 2/4;
+    grid-column: 3;
+    background-color: #fce0d2;
+    border-radius: 25px;
+    text-align: center;
+    margin-top: 0px;
+    margin-right: 100px;
+
+}
+.wildcard{
+    grid-row: 3;
+    grid-column: 1;
+    background-color: #fce0d2;   
+    margin-left: 100px; 
+    height: 250px;
+    border-radius: 25px;
+    text-align: center;
+}
+.game{
+    grid-row: 2/4;
+    grid-column: 2;
+    background-color: #fce0d2;
+    margin-top: 270px;
+    border-radius: 25px;
+    text-align: center;
+    height: 350px;
+
+   
+}
