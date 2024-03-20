@@ -19,7 +19,7 @@ function FrontPage() {
                                 <a href="/page3" className='button-74'>Minusta</a> {/* Yksinkertainen linkki "minusta"-sivulle */}
                             </li>
                             <li>
-                                <a href="/page3" className='button-74'>Testi1</a> {/* Yksinkertainen linkki "minusta"-sivulle */}
+                                <a href="/peli" className='button-74'>Testi1</a> {/* Yksinkertainen linkki "minusta"-sivulle */}
                             </li>
                             <li>
                                 <a href="/page3" className='button-74'>Testi2</a> {/* Yksinkertainen linkki "minusta"-sivulle */}

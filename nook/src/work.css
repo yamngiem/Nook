@@ -107,7 +107,7 @@ h1 {
     background-color: #fce0d2;
     border-radius: 25px;
     text-align: center;
-    height: 250px;
+    height: 220px;
     /* Lisätään korkeutta selkeyden vuoksi */
 }
 
@@ -132,17 +132,7 @@ h1 {
     text-align: center;
 }
 
-.game {
-    grid-row: 2/4;
-    grid-column: 2;
-    background-color: #fce0d2;
-    margin-top: 270px;
-    border-radius: 25px;
-    text-align: center;
-    height: 350px;
 
-
-}
 
 .calculator {
     grid-row: 1;
@@ -199,3 +189,59 @@ button {
     background-color: #966a51;
     color: #fbeee0;
 }
+
+
+/* styles.css */
+
+/* Resetoidaan sivun tyylit */
+
+/* Määritellään juurielementin tyylit */
+
+
+/* Game styles */
+
+.game1 {
+    grid-row: 2/4;
+    grid-column: 2;
+    background-color: #fce0d2;
+    margin-top: 240px;
+    border-radius: 25px;
+    text-align: center;
+    height: 380px;
+  }
+  .game {
+    grid-row: 2/4;
+    grid-column: 2;
+    background-color: #fce0d2;
+    margin-top: 20px;
+    padding-left: 35px;
+    border-radius: 25px;
+    text-align: center;
+   
+
+
+}
+  /* Cell styles */
+  .cell {
+    width: 60px; /* Assuming cellSize = 50px */
+    height: 60px; /* Assuming cellSize = 50px */
+    margin-right: calc(70px * 0.5); /* Assuming cellSize = 50px */
+    border-radius: 4px;
+    margin-bottom: calc(70px * 0.5); /* Assuming cellSize = 50px */
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 1px 2px 0;
+    color: #333;
+    font-size: 1rem; /* Adjusted font size */
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+    position: absolute; /* Added */
+    text-align: centers;
+}
+
+  
+  /* Empty cell styles */
+  .empty {
+    opacity: 0;
+  }
+
