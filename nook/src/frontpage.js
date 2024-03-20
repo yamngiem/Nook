@@ -32,17 +32,24 @@ function FrontPage() {
                     <h2>Mun nimi on Jasmin ja oon koodari c:</h2>
 
                     <div className='button-container'>
-                        <button className='button-56' id='btn1' > Hire Me!</button>
-                        <button className='button-56' id='btn2'> My Work</button>
+                    <a href="/cv" className='button-56' id='btn1'>Hire Me!</a>
+                    <a href="/mywork" className='button-56' id='btn2'>My Work</a>
                     </div>
 
                     <div className='clouds'>
-                    <img src="../kuvat/pilvioik.png" alt="Logo kuvaileva teksti" className="cloud" />
-                    <img src="../kuvat/pilvi.png" alt="Logo kuvaileva teksti" className="cloud2" />
+                        <img src="../kuvat/pilvioik.png" alt="Logo kuvaileva teksti" className="cloud" />
+                        <img src="../kuvat/pilvi.png" alt="Logo kuvaileva teksti" className="cloud2" />
                     </div>
-                  
 
 
+
+                </div>
+
+                <div class="containerEnvelope">
+                    
+                    <a class="envelope" href="#"><span class="text">Jasmin.hietala13@gmail.coms</span></a>
+                    
+                   
                 </div>
 
 

@@ -3,13 +3,19 @@ import './testi.css'; // Lisää import-lauseeseen "from"
 
 function FrontPage() {
     return (
+
         
-                    <button className='button-56'> HIRE ME!</button>
-        
-        
-        
-        
-      );
+    
+
+        <div className='cvSivu'>
+        {/* <button className='button-56'> HIRE ME!</button> */}
+        <img src="../kuvat/CV.png" alt="Logo kuvaileva teksti" className="cv"/>
+        <a href="/page2"  className='button59' id='btn3' > X </a>
+    </div>
+
+
+
+    );
 }
 
 export default FrontPage;
