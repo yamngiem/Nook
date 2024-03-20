@@ -3,13 +3,14 @@
     src: url(C:\Users\jasmi\Omatprojektit\Nook\nook\public\fonts\CorneroftheSky.ttf);
 }
 
-.workelements{
+.workelements {
     display: grid;
     grid-row: auto auto auto;
-    grid-column: auto auto auto ;
+    grid-column: auto auto auto;
     grid-gap: 20px;
-   
+
 }
+
 /* CSS */
 .button60 {
     grid-row: 1;
@@ -37,7 +38,7 @@
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
-    justify-self:end ;
+    justify-self: end;
     margin-right: 120px;
 }
 
@@ -74,7 +75,8 @@
         padding: 0 40px;
     }
 }
-h1{
+
+h1 {
     font-family: 'PartyConfetti', sans-serif;
     letter-spacing: 2px;
     text-transform: lowercase;
@@ -83,7 +85,7 @@ h1{
 
 
 
-.calculator{
+.calculator-container {
     grid-row: 2;
     grid-column: 1;
     background-color: #fce0d2;
@@ -92,35 +94,45 @@ h1{
     margin-top: 0px;
     margin-left: 100px;
     height: 350px;
+    display: grid;
+    
+    
 }
+
 .spotify {
-    grid-row: 2; /* Sijoitetaan Spotify-div ensimmäiselle riville */
-    grid-column: 2; /* Sama sarakke kuin pelidiv */
+    grid-row: 2;
+    /* Sijoitetaan Spotify-div ensimmäiselle riville */
+    grid-column: 2;
+    /* Sama sarakke kuin pelidiv */
     background-color: #fce0d2;
     border-radius: 25px;
     text-align: center;
-    height: 250px; /* Lisätään korkeutta selkeyden vuoksi */
+    height: 250px;
+    /* Lisätään korkeutta selkeyden vuoksi */
 }
-.weather{
+
+.weather {
     grid-row: 2/4;
     grid-column: 3;
     background-color: #fce0d2;
     border-radius: 25px;
     text-align: center;
     margin-top: 0px;
-    margin-right: 100px;
+    margin-right: 200px;
 
 }
-.wildcard{
+
+.wildcard {
     grid-row: 3;
     grid-column: 1;
-    background-color: #fce0d2;   
-    margin-left: 100px; 
+    background-color: #fce0d2;
+    margin-left: 100px;
     height: 250px;
     border-radius: 25px;
     text-align: center;
 }
-.game{
+
+.game {
     grid-row: 2/4;
     grid-column: 2;
     background-color: #fce0d2;
@@ -129,5 +141,61 @@ h1{
     text-align: center;
     height: 350px;
 
-   
+
+}
+
+.calculator {
+    grid-row: 1;
+    grid-column: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-radius: 25px;
+    width: 250px;
+    background-color: #402a1c;
+
+}
+
+.display {
+    margin-bottom: 1rem;
+    margin-top: 40px;
+    width: 200px;
+    height: 30px;
+    padding: 5px;
+}
+
+.keypad {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5px;
+    margin: 0;
+    padding: 0;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+button {
+    width: 30px;
+    height: 30px;
+    font-size: 15px;
+
+    background-color: #fee6e3;
+    border: 2px solid #111;
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: #111;
+    cursor: pointer;
+    font-family: 'CorneroftheSky', sans-serif;
+    font-size: 16px;
+    justify-content: center;
+    line-height: 24px;
+  
+}
+
+.button:hover {
+    background-color: #966a51;
+    color: #fbeee0;
 }
