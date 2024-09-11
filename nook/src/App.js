@@ -1,54 +1,25 @@
-// import logo from './logo.svg';
-import './login.css';
-
+// App.js
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Page1 from './login';
+import Page2 from './frontpage';
+import Page3 from './testi';
+import Page4 from './work';
+import Page5 from './peli';
 
 
 function App() {
-
-  // const backgroundStyle = {
-  //   backgroundImage: `url(${process.env.PUBLIC_URL}/kuvat/login.jpg)`,
-  //   backgroundSize: 'cover',
-  //   backgroundPosition: 'center',
-  //   height: '100vh',
-  //   display: 'flex',
-  //   justifyContent: 'center',
-  //   alignItems: 'center',
-  //   color: 'white',
-  // };
-
-
-
-
-
-
   return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<Page1 />} />
+        <Route path="/page2" element={<Page2 />} />
+        <Route path='/cv' element={<Page3/>}/>
+        <Route path='/mywork' element={<Page4/>}/>
+        <Route path='/peli' element={<Page5/>}/>
 
-    <div className="grid-background">
-      <div className="grid-container">
-
-
-
-        <img src="../kuvat/logo2.png" alt="Logo kuvaileva teksti" className="logo" />
-
-
-        <label class="username">
-
-          <input defaultValue={"text"} id="etunimi" type="text" placeholder="Username" />      </label>
-
-
-
-        <label class="password">
-
-          <input defaultValue={"password"} id="etunimi" type="text" placeholder="Enter your password" />      </label>
-
-
-        <button className="loginnappi"></button>
-        {/* Täällä voit lisätä grid-item-elementtejä */}
-      </div>
-
-
-    </div>
-
+      </Routes>
+    </Router>
   );
 }
 
