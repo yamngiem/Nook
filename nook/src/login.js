@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom'; // Lisää reitityskomponentti
 function Login() { // Korjaa komponentin nimi isolla alkukirjaimella
   return (
     <div className="grid-background">
+     {/* <img src="../kuvat/pilvitransitio.png" alt="Logo kuvaileva teksti" className="transitio" /> */}
       <div className="grid-container">
         <link rel="icon" href="../kuvat/valilehtilogo.png" type="image/x-icon" />
         <img src="../kuvat/logo2.png" alt="Logo kuvaileva teksti" className="logo" />
@@ -23,6 +24,7 @@ function Login() { // Korjaa komponentin nimi isolla alkukirjaimella
         </label>
        
       </div>
+     
     </div>
   );
 }

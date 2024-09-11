@@ -102,4 +102,15 @@
     border: 2px solid #865525;
     box-shadow: 0 0 10px rgba(75, 50, 31, 0.5);
   }
+  .transitio {
+    margin-left: 40%;
+   
+    top: 0;
+    left: 0;
+    max-width: 80%;
+  
+    justify-content: right;
+    z-index: 999; /* Aseta korkeampi z-indeksi kuin muille elementeille */
+  }
+  
   

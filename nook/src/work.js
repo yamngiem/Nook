@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import './work.css';
 import Display from "./Display";
 import Keypad from "./Keypad";
+import Weather from "./weather";
+
+
 
 class Work extends Component {
     constructor(props) {
@@ -83,6 +86,11 @@ class Work extends Component {
                 </div>
                 <div className='weather'>
                     <h1>sää</h1>
+                    <div className='weatherapi'>
+                        <Weather />
+                    </div>
+
+
                 </div>
                 <div className='wildcard'>
                     <h1>willikortti</h1>

@@ -313,7 +313,7 @@ h2{
     max-height: 250px;
     position: relative;
     transform: scaleX(-1) rotate(-15deg);
-    animation: moveCloudLeft 10s linear infinite; /* Lisätään animaatio pilvelle */
+    animation: moveCloudLeft 6s linear infinite; /* Lisätään animaatio pilvelle */
 }
 
 .cloud2 {
@@ -322,7 +322,7 @@ h2{
     max-height: 250px;
     position: relative;
     transform: scaleX(-1) rotate(15deg);
-    animation: moveCloudRight 10s linear infinite; /* Lisätään animaatio pilvelle */
+    animation: moveCloudRight 6s linear infinite; /* Lisätään animaatio pilvelle */
 }
 
 @keyframes moveCloudLeft {
